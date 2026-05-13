@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feast Restaurant</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+
+  <header>
+    <div class="head">
+
+      <!-- LOGO -->
+      <img src="Image/images.png" class="logo">
+
+      <!-- DESKTOP MENU -->
+      <nav class="menu">
+        <ul class="nav-menu">
+          <li class="list-item"><a href="#" class="list-link">OUR STORY</a></li>
+          <li class="list-item"><a href="#menu" class="list-link">MENU</a></li>
+          <li class="list-item"><a href="#blog" class="list-link">BLOGS</a></li>
+          <li class="list-item"><a href="#reserve-table" class="list-link">RESERVATION</a></li>
+          <li class="list-item"><a href="#footer" class="list-link">CONTACT </a></li>
+        </ul>
+      </nav>
+
+      <!-- HAMBURGER -->
+      <div class="menu-btn" onclick="openMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+    </div>
+  </header>
+  
+
+  <!-- ================= ADVANCED SIDE MENU ================= -->
+  <aside id="sideMenu" class="side-menu">
+
+    <!-- CLOSE -->
+    <span class="close-btn" onclick="closeMenu()">×</span>
+
+    <!-- PROFILE -->
+    <div class="menu-profile">
+      <img src="Image/images.png">
+      <h3>Feast Restaurant</h3>
+      <p>Welcome </p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- LINKS -->
+    <!-- HOME -->
+<a href="#" onclick="closeMenu()"> Home</a>
+
+<!-- MENU -->
+<a href="#menu" onclick="closeMenu()"> Menu</a>
+
+<!-- BLOG -->
+<a href="#blog" onclick="closeMenu()"> Blogs</a>
+
+<!-- RESERVATION -->
+<a href="#reserve-table" onclick="closeMenu()"> Reservation</a>
+
+<!-- CONTACT -->
+<a href="#footer" onclick="closeMenu()"> Contact</a>
+
+    <div class="divider"></div>
+
+    <!-- FOOTER -->
+    <div class="menu-footer">
+      © 2026 Feast Restaurant
+    </div>
+
+
+  </aside>
+  <section class="Hero_section">
+    <div class="hero">
+
+      <!-- LEFT SIDE -->
+      <div class="hero-text">
+        <h1>Memorable Dining <br>Experience</h1>
+
+        <p>
+          Relax in an atmosphere that feels like home while enjoying a menu designed
+          to satisfy every craving. Wchether it's healthy options or indulgent favorites,
+          we've got something for everyone.
+        </p>
+
+        <button><a href="#reserve-table">Reserve a Table</a></button>
+
+        <div class="short-about">
+
+          <div>
+            <div class="title">
+              <i class="fas fa-award"></i>
+              <h4>Years of Culinary Excellence</h4>
+            </div>
+            <p>Over 25 years of creating unforgettable dining experiences</p>
+          </div>
+
+          <div>
+            <div class="title">
+              <i class="fas fa-utensils"></i>
+              <h4>Signature Dishes Created</h4>
+            </div>
+            <p>Over 150+ uniquely created dishes that showcase culinary excellence</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="hero-img">
+        <img src="Image/Hero.png" alt="Dining Image">
+      </div>
+
+    </div>
+  </section>
+
+  <section id="enjoy-section">
+
+    <div class="container">
+
+      <!-- LEFT IMAGE -->
+      <div class="img-box">
+        <img src="Image/cook.jpg" alt="Chef cooking">
+        <p>Every dish is crafted for a perfect balance of taste and nutriton,
+          served in a serene ambniance.
+        </p>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="content">
+        <h3>Enjoy a cozy atmosphere & a menu crafted to satisfy every craving</h3>
+
+        <p>
+          Experience meals made from the freshest ingredients, designed to delight your taste buds.
+          Whether you are looking for healthy options or indulgent comfort food, we've got you covered.
+          Enjoy each bite in a peaceful, inviting atmosphere.
+        </p>
+
+        <button class="btn"><a href="#reserve-table">Reserve a Table</a></button>
+
+        <!-- SMALL GALLERY -->
+        <div class="gallery">
+          <img src="Image/images.jpg" alt="Food Image">
+          <img src="Image/Turkish-breakfast-Cate.jpg" alt="Breakfast Image">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="menu-section">
+
+      <h6>OUR DISHES</h6>
+      <h1>Explore Our Menu</h1>
+
+      <!-- TOP ROW -->
+      <div class="menu-row">
+
+        <!-- LEFT TEXT -->
+        <div class="menu-text">
+
+          <div class="item">
+            <h3>Decadent Chocolate Lava Cake <span>$8.99</span></h3>
+            <hr>
+            <p>Chocolate / Cocoa / Powdered sugar</p>
+          </div>
+
+          <div class="item">
+            <h3>Mediterranean Feta & Olive Salad <span>$13.99</span></h3>
+            <hr>
+            <p>Cheese / Olives / Cucumber / Onions</p>
+          </div>
+
+          <div class="item">
+            <h3>Pesto Penne with Sun-Dried Tomatoes <span>$29.99</span></h3>
+            <hr>
+            <p>Pesto sauce / Sun-dried tomatoes / Parmesan</p>
+          </div>
+
+          <div class="item">
+            <h3>Freshly Brewed Herbal Iced Tea <span>$4.99</span></h3>
+            <hr>
+            <p>Mint / Chamomile tea / Honey</p>
+          </div>
+
+          <div class="item">
+            <h3>Double Chocolate Chip Cookies <span>$11.99</span></h3>
+            <hr>
+            <p>Butter / Flour / Chocolate chips / Sugar</p>
+          </div>
+
+          <div class="item">
+            <h3>House-Made Lemonade with Mint <span>$18.99</span></h3>
+            <hr>
+            <p>Mint / Fresh lemons / Water / Sugar</p>
+          </div>
+
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="menu-img">
+          <img src="Image/menu-pic.jpg" alt="Menu Image">
+        </div>
+
+      </div>
+
+      <!-- BOTTOM ROW -->
+      <div class="menu-row">
+
+        <!-- LEFT IMAGE -->
+        <div class="menu-img">
+          <img src="Image/menu-2.jpg" alt="Menu Image">
+        </div>
+
+        <!-- RIGHT TEXT -->
+        <div class="menu-text">
+
+          <div class="item">
+            <h3>Smoky BBQ Pulled Pork Sliders <span>$6.99</span></h3>
+            <hr>
+            <p>Pork / BBQ sauce / Bread</p>
+          </div>
+
+          <div class="item">
+            <h3>Margherita Pizza with Fresh Basil <span>$15.99</span></h3>
+            <hr>
+            <p>Cheese / Tomato / Basil</p>
+          </div>
+
+          <div class="item">
+            <h3>Golden Crunchy Onion Rings <span>$6.99</span></h3>
+            <hr>
+            <p>Onion / Flour / Oil</p>
+          </div>
+
+          <div class="item">
+            <h3>Roasted Beet & Goat Cheese Salad <span>$13.99</span></h3>
+            <hr>
+            <p>Beetroot / Goat cheese / Walnuts</p>
+          </div>
+
+          <div class="item">
+            <h3>Lemon Garlic Shrimp Scampi Pasta <span>$21.99</span></h3>
+            <hr>
+            <p>Lemon / Butter / Garlic / Shrimp</p>
+          </div>
+
+          <div class="item">
+            <h3>Classic Beef Lasagne with Parmesan <span>$19.99</span></h3>
+            <hr>
+            <p>Noodles / Ricotta / Marinara sauce</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <section id="happy-customer">
+    <div class="customer">
+
+      <!-- SMALL TITLE -->
+      <h6>TESTIMONIALS</h6>
+
+      <!-- MAIN TITLE -->
+      <h1>Happy Customers</h1>
+
+      <!-- DESCRIPTION -->
+      <p>
+        The warm, inviting ambiance was the perfect setting for a relaxed dinner.
+        The food was delicious and beautifully presented. The service was friendly,
+        attentive, and made us feel truly special. I’ll definitely return to try more!
+      </p>
+
+      <!-- CUSTOMER IMAGES -->
+      <div class="customer-imgs">
+        <img src="Image/cust-1.jpg" alt="Customer 1">
+        <img src="Image/cust-2.jpg" alt="Customer 2">
+        <img src="Image/cust-3.jpg" alt="Customer 3">
+        <img src="Image/cust-4.png" alt="Customer 4">
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-box">
+
+      <!-- LEFT IMAGE -->
+      <div class="about-img">
+        <img src="Image/about-1.jpg" alt="Restaurant Image">
+      </div>
+
+      <!-- TEXT CONTENT -->
+      <div class="text-box">
+        <h1 class="about-text">A Place for Every Occasion</h1>
+
+        <p class="about-text">
+          We believe that every meal is a story waiting to be told.
+          From our humble beginnings to becoming a favorite spot
+          for food lovers, we've always been committed to delivering
+          the finest dining experience.
+        </p>
+
+        <button><a href="#menu">View Menu</a></button>
+
+        <hr>
+
+        <h1 class="about-num">98%</h1>
+
+        <p class="about-num-text">
+          We are committed to creating memorable experiences by
+          offering delicious meals and exceptional service.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="about-right-img">
+      <img src="Image/about-2.jpg" alt="Chef Image">
+    </div>
+  </section>
+
+
+
+  <section id="reserve-table">
+
+    <div class="reserve-table-box">
+
+      <!-- LEFT CONTENT -->
+      <div class="reserve-content">
+
+        <h1>
+          Make your dining experience even more enjoyable by reserving your table in advance.
+        </h1>
+
+        <p>
+          Planning a night out with friends, a special occasion, or a cozy dinner for two?
+          Our online reservation system allows you to book your table anytime from anywhere.
+        </p>
+
+        <form>
+
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+          </div>
+
+          <div class="form-group">
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" placeholder="Enter mobile number">
+          </div>
+
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date">
+          </div>
+
+          <div class="form-group">
+            <label for="time">Time</label>
+            <input type="time" id="time">
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Special Request..."></textarea>
+          </div>
+
+          <input type="submit" value="Reserve Now" class="reserve-btn">
+
+        </form>
+
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="reserve-table-img-box">
+        <img src="Image/reserve-table.jpg" alt="Reserve Table">
+      </div>
+
+    </div>
+
+  </section>
+  <section id="service">
+    <div class="service-box">
+
+      <div class="service-item">
+        <i class="fa-solid fa-burger"></i>
+        <h4>Fresh Ingredients</h4>
+        <p>Assure customers of top-quality ingredients and freshly prepared meals.</p>
+      </div>
+
+      <div class="service-item">
+        <i class="fa-solid fa-phone"></i>
+        <h4>Reservation System</h4>
+        <p>Allow customers to book reservations with automated confirmations.</p>
+      </div>
+
+      <div class="service-item">
+        <i class="fa-solid fa-wine-glass"></i>
+        <h4>Private Dining</h4>
+        <p>Book private dining area for your special moments with loved ones.</p>
+      </div>
+
+      <div class="service-item">
+        <i class="fa-solid fa-bowl-food"></i>
+        <h4>Chef's Specials</h4>
+        <p>Indulge in exclusive dishes created by our chef for a unique experience.</p>
+      </div>
+
+    </div>
+  </section>
+  <section id="occasion">
+    <div class="occasion-box">
+
+      <div class="occ-content">
+        <h4>– BOOK YOUR SPECIAL OCCASION–</h4>
+
+        <h1>Quick and Easy Reservation</h1>
+
+        <p>
+          Why wait for a table when you can secure your spot ahead of time?
+          Book your reservation with just a few clicks and enjoy a seamless dining experience.
+        </p>
+
+        <button><a href="#reserve-table">Reserve a Table</a></button>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="blog">
+
+    <div class="blog-heading">
+      <h4>OUR BLOGS</h4>
+      <h1>Articles & Resources</h1>
+    </div>
+
+    <div class="blog-box">
+
+      <!-- BLOG CARD 1 -->
+      <div class="blog-card">
+        <img src="Image/art-1.jpg" alt="Dining Atmosphere">
+
+        <h6>The Benefits of Dining in a Cozy Atmosphere</h6>
+
+        <hr>
+
+        <p>
+          Experience how a cozy atmosphere elevates your meal into a memorable dining moment.
+        </p>
+
+        <span>Mar 10, 2026 • DINING EXPERIENCE</span>
+      </div>
+
+      <!-- BLOG CARD 2 -->
+      <div class="blog-card">
+        <img src="Image/art-2.jpg" alt="Wine and Cheese">
+
+        <h6>The Perfect Pairing: Wine and Cheese Guide</h6>
+
+        <hr>
+
+        <p>
+          Unlock the perfect wine and cheese pairing with expert guidance,
+          elevating every meal experience.
+        </p>
+
+        <span>Mar 10, 2026 • FOOD PAIRING</span>
+      </div>
+
+      <!-- BLOG CARD 3 -->
+      <div class="blog-card">
+        <img src="Image/art-3.jpg" alt="Sustainability">
+
+        <h6>Our Commitment to Sustainability in Dining</h6>
+
+        <hr>
+
+        <p>
+          Learn how we reduce waste, support local farms,
+          and prioritize sustainability in every step.
+        </p>
+
+        <span>Mar 10, 2026 • SUSTAINABILITY</span>
+      </div>
+
+    </div>
+
+  </section>
+  <section id="Frequently-Question">
+    <div class="freq-ques-box">
+
+      <!-- HEADING -->
+      <div class="faq-heading">
+        <h4>FAQ'S</h4>
+        <h1>Frequently Asked Questions</h1>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="faq-content">
+
+        <!-- LEFT IMAGE -->
+        <div class="freq-img-box-left">
+          <img src="Image/faq-img" FAQ Image">
+        </div>
+
+        <!-- RIGHT TEXT -->
+        <div class="freq-text-box-right">
+
+          <div class="faq-item">
+            <p>Do you have any special promotions or loyalty programs?</p>
+            <hr>
+          </div>
+
+          <div class="faq-item">
+            <p>Is there parking available for guests visiting your restaurant?</p>
+            <hr>
+          </div>
+
+          <div class="faq-item">
+            <p>Do you offer catering services for private events or parties?</p>
+            <hr>
+          </div>
+
+          <div class="faq-item">
+            <p>What are the restaurant's hours of operation and availability?</p>
+            <hr>
+          </div>
+
+          <div class="faq-item">
+            <p>Are pets allowed in your restaurant's outdoor seating area?</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+
+    <div class="contact">
+
+      <div class="contact-box">
+
+        <!-- TOP TEXT -->
+        <div class="footer-top">
+          <h1>Keep up with our latest menu updates and seasonal specials!</h1>
+
+          <p>
+            Sign up for our newsletters & keep your inbox full of flavor!
+          </p>
+        </div>
+
+        <hr>
+
+        <!-- MENU -->
+        <ul class="cont-menu">
+          <li class="cont-list"><a href="#">OUR STORY</a></li>
+          <li class="cont-list"><a href="#menu">MENU</a></li>
+          <li class="cont-list"><a href="#blog">BLOGS</a></li>
+          <li class="cont-list"><a href="#footer">CONTACT US</a></li>
+          <li class="cont-list"><a href="#">REVIEWS</a></li>
+        </ul>
+
+        <!-- CENTER ROW -->
+        <div class="footer-info-row">
+
+          <!-- RESOURCE -->
+          <div class="resource-box">
+            <h3>Resources</h3>
+            <p>Changelog</p>
+            <p>Privacy Policy</p>
+            <p>License</p>
+          </div>
+
+          <!-- CONTACT INFO -->
+          <div class="cont-info-box">
+            <h3>Contacts</h3>
+            <p>+977 9812345678</p>
+            <p>info@feastrestaurant.com</p>
+          </div>
+
+          <!-- ADDRESS -->
+          <div class="address-box">
+            <h3>Address</h3>
+            <p>Siraha, Siraha District, Madhesh Province, Nepal</p>
+          </div>
+
+        </div>
+
+        <!-- SOCIAL ICONS -->
+        <div class="follow-box">
+
+          <!-- Facebook -->
+          <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <!-- Instagram -->
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <!-- YouTube -->
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div class="copyright">
+        <p>
+          © 2026 Feast Restaurant. All rights reserved.
+          <br>
+          Developed by Suraj Mahara
+        </p>
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
